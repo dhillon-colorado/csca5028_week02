@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSCA 5028 Week02 Assignment</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/normalize.css') }}"/>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/skeleton.css') }}"/>
+</head>
+<body>
+   <div class="container">
+    <form action="{{ url_for('echo_input') }}" method="POST">
+        <label for="user_input">Enter some text</label>
+        <input name="user_input">
+        <input class="button-primary" type="submit" value="Submit!">
+    </form>
+
+   </div>
+</body>
+</html>
